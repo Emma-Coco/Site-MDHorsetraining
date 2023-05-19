@@ -1,0 +1,225 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+/*MON CSS*/
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins/Poppins-ExtraLight.ttf');
+    font-weight: 200;
+  }
+
+
+body{
+    width: 100%;
+    margin: auto;
+    font-family: 'poppins', sans-serif;
+    background-color: #FAF8F0;
+}
+
+
+.wrapper{
+    max-width: 1276px;
+    margin: auto;
+}
+
+/*HEADER*/
+
+.banner{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.logo{
+    max-width: 140px;
+    max-height: 80px;
+}
+
+.logo img{
+    width: 100%;
+    margin-right: 10px;
+}
+
+.title{
+    margin-left: 10px;
+}
+
+h1{ 
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 45px;
+}
+
+h2{
+    font-weight: 100;
+    font-size: 25px;
+    line-height: 38px;
+}
+
+
+/*NAVIGATION*/
+
+nav{
+width: 100%;
+background-color: #78574F;
+opacity: 0.85;
+padding: 10px 0;
+top: 0;
+position: sticky;
+z-index: 40;
+}
+
+
+.nav{
+    display: flex;
+    justify-content: center;
+}
+
+.nav li{
+    padding: 0 30px;
+}
+
+.nav li a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.nav li.active a {
+    font-weight: bold;
+}
+
+.nav li a.bold {
+    font-weight: bold;
+  }
+  
+
+ul .langues li{
+    display: flex;
+    padding-right: 10px;
+    min-width: 140px;
+    color: white;
+    text-align: center;
+}
+
+.langues img{
+    max-width: 25px;
+    margin-right: 5px;
+    filter: invert(100%);
+}
+
+ul .langues li a, ul .langues li p{
+    margin: auto;
+}
+
+
+/*Carousel de photos*/
+
+.accueil{
+    width: 100%;
+    background-color: #302D29;
+    padding: 70px 0;
+    position: relative;
+    z-index: 0;
+}
+
+.carouselContainer{
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.carousel-list{
+    display: flex;
+}
+
+.carousel-list li {
+max-width: 33.34%;
+flex: 1 0 33.34%;
+margin: 0 0.5px;
+    
+}
+
+.carousel-list li img {
+width: 416px;
+height: 440px;
+object-fit: cover;
+border-radius: 10px;
+}
+
+.nav-gauche {
+    max-width: 60px;
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    z-index: 1;
+    cursor: pointer;
+  }
+  
+  .nav-droite {
+    max-width: 60px;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  .nav-gauche img, .nav-droite img {
+    width: 100%;
+  }
